@@ -6,13 +6,13 @@ docker pull postgres
 
 2. Run the postgresqldb container
 
-docker run -d \                                                            
+"docker run -d \                                                            
   --name postgres-container \
   -e POSTGRES_DB=forsakenneondb \
   -e POSTGRES_USER=root \
   -e POSTGRES_PASSWORD=root \
   -p 5432:5432 \
-  postgres
+  postgres"
 
 3. Run the SpringBoot auth microservice
 4. Via DBeaver add roles in postgresql table roles.

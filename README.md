@@ -5,6 +5,7 @@ Java SpringBoot PostgreSQL Jwt Authenthication
 docker pull postgres    
 
 2. Run the postgresqldb container
+
 docker run -d \                                                            
   --name postgres-container \
   -e POSTGRES_DB=forsakenneondb \

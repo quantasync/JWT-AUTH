@@ -11,8 +11,9 @@ docker run -d --name postgres-container -e POSTGRES_DB=quantasyncdb -e POSTGRES_
 ```
 4. Via DBeaver add roles in postgresql table roles.
 5. Run the SpringBoot auth microservice
-6. Testing:
- 
+6. Testing (use Postman):
+___
+### Sign up
 POST
 http://localhost:8080/api/auth/signup
 {
@@ -21,20 +22,22 @@ http://localhost:8080/api/auth/signup
     "password": "1234",
     "role": ["admin"]
 }
-
+___
+### Sign in
 POST
 http://localhost:8080/api/auth/signin
 {
     "username": "name",
     "password": "1234"
 }
-
+___
+### Get content aviable for everyone
 GET (content for all)
 http://localhost:8080/api/test/all
-
+___
+### Get content aviable for admin users only
 GET (admin content)
 http://localhost:8080/api/test/admin
 
 Add Barear Access token from signin response.
-
-
+___

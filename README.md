@@ -13,8 +13,8 @@ docker run -d \
   -p 5432:5432 \
   postgres
 
-3. Run the SpringBoot auth microservice
-4. Via DBeaver add roles in postgresql table roles.
+3. Via DBeaver add roles in postgresql table roles.
+4. Run the SpringBoot auth microservice
 5. Testing:
  
 POST

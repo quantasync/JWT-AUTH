@@ -15,12 +15,13 @@ docker run -d \
 
 3. Run the SpringBoot auth microservice
 4. Via DBeaver add roles in postgresql table roles.
-5. Enjoy:
+5. Testing:
+ 
 POST
 http://localhost:8080/api/auth/signup
 {
-    "username": "forsakenneon",
-    "email": "forsakenneon@example.com",
+    "username": "name",
+    "email": "name@example.com",
     "password": "1234",
     "role": ["admin"]
 }
@@ -28,7 +29,7 @@ http://localhost:8080/api/auth/signup
 POST
 http://localhost:8080/api/auth/signin
 {
-    "username": "forsakenneon",
+    "username": "name",
     "password": "1234"
 }
 
@@ -37,6 +38,7 @@ http://localhost:8080/api/test/all
 
 GET (admin board content)
 http://localhost:8080/api/test/admin
+
 Add Barear Access token from signin response.
 
 

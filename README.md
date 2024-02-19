@@ -36,7 +36,7 @@ http://localhost:8080/api/auth/signin
 GET (content for all)
 http://localhost:8080/api/test/all
 
-GET (admin board content)
+GET (admin content)
 http://localhost:8080/api/test/admin
 
 Add Barear Access token from signin response.
